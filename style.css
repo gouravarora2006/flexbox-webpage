@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container div{
+    margin: 0;
+}
+.header{
+    padding: 60px;
+    background-color: #16bc9c;
+    text-align: center;
+    color: white;
+    background-image: url("./assets/nature.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+span{
+      font-weight: 700;
+      color: black;
+}
+.navbar-items{
+    background-color: black;
+    display: flex;
+}
+.navbar-items a{
+    color: white;
+    text-decoration:none ;
+    padding: 15px 20px;
+    text-align: center;
+}
+.navbar-items a:hover{
+    background-color: white;
+    color: black;
+}
+.container-center{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-side{
+    flex: 30%;
+    background-color: #f7f4f4;
+    padding: 20px;
+  }
+
+.container-main {
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+      }
+
+.side-image , .main-image{
+    height:200px;
+    width: 100%;
+    padding: 20px;
+}
+.side-small-image{
+    height:130px;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer {
+        padding: 20px;
+        text-align: center;
+        color: white;
+        background-color:black
+      }
+      
+@media screen and (max-width: 1250px) {
+        .container-center, .navbar-items {   
+          flex-direction: column;
+        }
+      }
